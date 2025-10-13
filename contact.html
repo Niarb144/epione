@@ -35,6 +35,10 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body class="index-page">
@@ -149,7 +153,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-      
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
@@ -158,11 +162,11 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
 
                 <div class="col-md-12">
@@ -170,7 +174,12 @@
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+
+                <!-- reCAPTCHA -->
+                <div class="col-md-12 text-center">
+                  <div class="g-recaptcha d-inline-block" data-sitekey="6Le4tOgrAAAAAAbkMAcAR_mijdc1A7bK9gP5GTpg"></div>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -200,7 +209,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+2547 4624 6801/  +2547 06366195</p>
+                  <a href="tel:+2547 4624 6801"><p>+2547 4624 6801/  +2547 06366195</p></a>
                 </div>
               </div><!-- End Info Item -->
 
@@ -208,7 +217,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>sales@epione-health.com</p>
+                  <a href="mailto:sales@epione-health.com"><p>sales@epione-health.com</p></a>
                 </div>
               </div><!-- End Info Item -->
 
