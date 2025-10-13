@@ -698,6 +698,47 @@
   <i class="bi bi-whatsapp"></i>
 </a>
 
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>We use cookies to enhance your browsing experience and to analyze our website traffic. 
+       You can accept all cookies or manage your preferences.</p>
+    <div class="cookie-buttons">
+      <button id="accept-all" class="btn btn-primary btn-sm">Accept All</button>
+      <button id="cookie-settings-btn" class="btn btn-outline-light btn-sm">Manage Settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div id="cookie-settings" class="cookie-settings">
+  <div class="settings-box">
+    <h5>Cookie Preferences</h5>
+    <p>Choose which cookies you want to accept. You can change these at any time.</p>
+
+    <label class="cookie-option">
+      <input type="checkbox" disabled checked>
+      <span>Necessary Cookies (always active)</span>
+    </label>
+
+    <label class="cookie-option">
+      <input type="checkbox" id="analytics-cookies">
+      <span>Analytics Cookies (help us improve the site)</span>
+    </label>
+
+    <label class="cookie-option">
+      <input type="checkbox" id="marketing-cookies">
+      <span>Marketing Cookies (for personalized content)</span>
+    </label>
+
+    <div class="settings-actions">
+      <button id="save-preferences" class="btn btn-primary btn-sm">Save Preferences</button>
+      <button id="close-settings" class="btn btn-secondary btn-sm">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -716,9 +757,12 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-document.getElementById('year').textContent = new Date().getFullYear()
-document.getElementById('year').style.color = 'black'
-</script>
+  document.getElementById('year').textContent = new Date().getFullYear()
+  document.getElementById('year').style.color = 'black'
+  </script>
+
+  <!-- Cookie Js -->
+   <script src="assets/js/cookie.js"></script>
 
 </body>
 
