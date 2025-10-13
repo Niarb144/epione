@@ -2020,3 +2020,53 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Whatsapp Icon */
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5c;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Optional tooltip style (if you want hover text visible on desktop) */
+.whatsapp-float::after {
+  content: attr(title);
+  position: absolute;
+  right: 70px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp-float:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*--------------------------------------------------------------*/
