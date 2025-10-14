@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const acceptAllBtn = document.getElementById('accept-all');
   const manageBtn = document.getElementById('cookie-settings-btn');
   const saveBtn = document.getElementById('save-preferences');
+  const close = document.getElementById('close-banner');
   const closeBtn = document.getElementById('close-settings');
 
   const analyticsToggle = document.getElementById('analytics-cookies');
@@ -50,6 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!localStorage.getItem('cookiePreferences')) {
       banner.style.display = 'block';
     }
+  });
+
+  //Close Cookie Banner
+  close.addEventListener('click', () => {
+    banner.style.display = 'none';
   });
 
   // Apply preferences (you can extend this for analytics scripts)
