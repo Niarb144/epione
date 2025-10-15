@@ -2145,3 +2145,25 @@ section,
   margin-top: 15px;
 }
 /* -------------------------------------------------------------- */
+
+.phone-number{
+  text-decoration: none;
+  color: var(--nav-dropdown-background-color);
+}
+
+.phone-number:hover{
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+  transition: all ease .5s;
+}
+
+.email-address{
+  text-decoration: none;
+  color: var(--nav-dropdown-background-color);
+}
+
+.email-address:hover{
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+  transition: all ease .5s;
+}

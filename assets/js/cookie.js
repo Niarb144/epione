@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Close Cookie Banner
   close.addEventListener('click', () => {
+    const allPrefs = { necessary: false, analytics: false, marketing: false };
+    localStorage.setItem('cookiePreferences', JSON.stringify(allPrefs));
+    applyCookiePreferences(allPrefs);
     banner.style.display = 'none';
   });
 
